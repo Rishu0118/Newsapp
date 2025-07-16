@@ -1,6 +1,5 @@
 package com.example.newsapp.data.ApiService
 
-import android.telecom.Call
 import com.example.newsapp.data.Model.ApiResponse
 import retrofit2.http.GET
 import retrofit2.http.Query

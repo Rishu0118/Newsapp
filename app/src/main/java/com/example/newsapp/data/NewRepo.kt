@@ -15,7 +15,7 @@ import kotlinx.coroutines.flow.flow
 class NewRepo {
      val apiInstance = ApiBuilder.retrofitObject()
     @RequiresExtension(extension = Build.VERSION_CODES.S, version = 7)
-   suspend fun getHeadLine(country:String="us"):Flow<ApiState> {
+    fun getHeadLine(country:String="us"):Flow<ApiState> {
         return flow {
             emit(ApiState(loading = true))
             try {
@@ -30,7 +30,7 @@ class NewRepo {
 
     }
 @RequiresExtension(extension = Build.VERSION_CODES.S, version = 7)
-suspend fun getEverything(q:String):Flow<ApiState>{
+fun getEverything(q:String):Flow<ApiState>{
     return flow{
         emit(ApiState(loading = true))
         try{
